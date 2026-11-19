@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ddxb2jab7femx"]
+
+[ext_resource type="Script" uid="uid://cuycvf6xsvcs0" path="res://shuttle.gd" id="1_gs1wb"]
+[ext_resource type="Texture2D" uid="uid://f76e8jv35uv5" path="res://Shuttle.png" id="2_ou70x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig35k"]
+size = Vector2(32, 32)
+
+[node name="Shuttle" type="CharacterBody2D" unique_id=1282448081]
+script = ExtResource("1_gs1wb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=337586482]
+texture = ExtResource("2_ou70x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=368971112]
+shape = SubResource("RectangleShape2D_ig35k")
